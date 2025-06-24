@@ -594,7 +594,7 @@ const WorkspaceMission = () => {
               </FieldWrap>
             </DataWrap>
 
-            <SectionRow>
+            <SectionRow style={{ marginTop: '20px' }}>
               <Section>
                 <Label>Mission</Label>
                 <Data>
@@ -715,11 +715,7 @@ const WorkspaceMission = () => {
                       </RepositoryUrl>
                     </RepositoryText>
                   </RepositoryInfo>
-                  <Button
-                    onClick={() => openModal('edit', repository)}
-                    text="Edit"
-                    color="link"
-                  />
+                  <Button onClick={() => openModal('edit', repository)} text="Edit" color="link" />
                 </RepositoryItem>
               ))}
               {repositories.length === 0 && <p>No repositories added yet.</p>}
@@ -742,7 +738,9 @@ const WorkspaceMission = () => {
                   </IntegrationContent>
                 </IntegrationInfo>
                 <Button
-                  onClick={() => openCodeGraphModal(codeGraph ? 'edit' : 'add', codeGraph || undefined)}
+                  onClick={() =>
+                    openCodeGraphModal(codeGraph ? 'edit' : 'add', codeGraph || undefined)
+                  }
                   text={codeGraph ? 'Edit' : 'Add'}
                   color="link"
                 />
@@ -762,7 +760,9 @@ const WorkspaceMission = () => {
                   </IntegrationContent>
                 </IntegrationInfo>
                 <Button
-                  onClick={() => openFeatureCallModal(featureCall ? 'edit' : 'add', featureCall || undefined)}
+                  onClick={() =>
+                    openFeatureCallModal(featureCall ? 'edit' : 'add', featureCall || undefined)
+                  }
                   text={featureCall ? 'Edit' : 'Add'}
                   color="link"
                 />
@@ -788,7 +788,7 @@ const WorkspaceMission = () => {
                 />
               </IntegrationItem>
             </Section>
-            
+
             <ToolsSection>
               <ToolButton
                 onClick={() => openSnippetModal()}

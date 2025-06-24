@@ -1012,7 +1012,9 @@ export const Section = styled.div`
   padding: 24px;
   border-radius: 8px;
   margin-bottom: 20px;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.06),
+    0px 1px 3px rgba(0, 0, 0, 0.1);
 `;
 
 export const SectionTitle = styled.h2`
@@ -1103,6 +1105,7 @@ export const ToolsSection = styled(Section)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 16px;
+  margin-bottom: 5%;
 `;
 
 export const ToolButton = styled(Button)`
